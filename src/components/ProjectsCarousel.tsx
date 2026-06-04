@@ -118,16 +118,17 @@ export function ProjectsCarousel() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <motion.div
-          className="flex"
-          style={{ gap: CARD_GAP }}
-          animate={{ x: offset }}
-          transition={{ type: "spring", stiffness: 300, damping: 30 }}
-          drag="x"
-          dragConstraints={{ left: -(trackWidth - containerWidth), right: 0 }}
-          dragElastic={0.05}
-          onDragEnd={handleDragEnd}
-        >
+        <div className="overflow-hidden">
+          <motion.div
+            className="flex"
+            style={{ gap: CARD_GAP }}
+            animate={{ x: offset }}
+            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            drag="x"
+            dragConstraints={{ left: -(trackWidth - containerWidth), right: 0 }}
+            dragElastic={0.05}
+            onDragEnd={handleDragEnd}
+          >
           {projects.map((project, index) => {
             const anim = cardAnim(index)
             const isActive = index === activeIndex
@@ -222,6 +223,7 @@ export function ProjectsCarousel() {
             )
           })}
         </motion.div>
+        </div>
 
         <button
           onClick={() => goTo(activeIndex - 1)}
