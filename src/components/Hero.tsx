@@ -71,8 +71,8 @@ export function Hero() {
         >
           {t(
             lang,
-            "I build digital products — websites, Discord bots,\nand automation tools.",
-            "Создаю цифровые продукты — сайты, Discord ботов и инструменты для автоматизации."
+            "I build digital products - websites, Discord bots,\nand automation tools.",
+            "Создаю цифровые продукты - сайты, Discord ботов и инструменты для автоматизации."
           )}
         </motion.p>
 
@@ -133,7 +133,7 @@ export function Hero() {
               <span className="w-2 h-2 rounded-full bg-[#555]" />
               <span className="w-2 h-2 rounded-full bg-[#444]" />
               <span className="w-2 h-2 rounded-full bg-[#333]" />
-              <span className="ml-auto text-[0.6rem] text-text-muted font-mono">EwEE — about</span>
+              <span className="ml-auto text-[0.6rem] text-text-muted font-mono">EwEE - about</span>
             </div>
             <div className="px-4 py-3.5 font-mono text-xs leading-relaxed text-text-secondary whitespace-pre">
               <Typewriter lines={terminalLines} />

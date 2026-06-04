@@ -16,14 +16,14 @@ const reviews: Review[] = [
     roleEn: "Owner of Barbershop «Klassika»",
   },
   {
-    text: "Заказал Discord бота для своего игрового сервера. Сделано за 3 дня, всё работает как часы. Отдельное спасибо за документацию — даже я разобрался как настраивать. Буду обращаться ещё.",
-    textEn: "Ordered a Discord bot for my gaming server. Done in 3 days, everything works like clockwork. Special thanks for the documentation — even I figured out how to configure it. Will come back for more.",
+    text: "Заказал Discord бота для своего игрового сервера. Сделано за 3 дня, всё работает как часы. Отдельное спасибо за документацию - даже я разобрался как настраивать. Буду обращаться ещё.",
+    textEn: "Ordered a Discord bot for my gaming server. Done in 3 days, everything works like clockwork. Special thanks for the documentation - even I figured out how to configure it. Will come back for more.",
     role: "Владелец игрового сообщества",
     roleEn: "Gaming community owner",
   },
   {
-    text: "Автоматизировали рутинные процессы в отделе — сэкономили часы работы каждую неделю. Инструмент гибкий, подстроили под наши нужды без проблем. Рекомендую как толкового автоматизатора.",
-    textEn: "Automated routine processes in our department — saved hours of work every week. The tool is flexible, adapted to our needs without issues. Recommend as a savvy automation specialist.",
+    text: "Автоматизировали рутинные процессы в отделе - сэкономили часы работы каждую неделю. Инструмент гибкий, подстроили под наши нужды без проблем. Рекомендую как толкового автоматизатора.",
+    textEn: "Automated routine processes in our department - saved hours of work every week. The tool is flexible, adapted to our needs without issues. Recommend as a savvy automation specialist.",
     role: "Руководитель IT-отдела",
     roleEn: "Head of IT department",
   },
