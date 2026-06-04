@@ -10,8 +10,8 @@ interface Review {
 
 const reviews: Review[] = [
   {
-    text: "Для тех кто ищет молодое дарование и крутого специалиста в разработке сайта, я вам гарантирую очень быструю работу, качество, индивидуальный подход к дизайну сайта, вообщем я очень доволен работой и всем буду рекомендовать данного кунг-фу мастера по сайтам. Процветания в личном деле \uD83E\uDEC2",
-    textEn: "For those looking for a young talent and a cool specialist in website development, I guarantee very fast work, quality, individual approach to site design, overall I'm very satisfied and will recommend this kung-fu master of websites to everyone. Prosperity in your personal endeavor \uD83E\uDEC2",
+    text: "Для тех кто ищет молодое дарование и крутого специалиста в разработке сайта, я вам гарантирую очень быструю работу, качество, индивидуальный подход к дизайну сайта, вообщем я очень доволен работой и всем буду рекомендовать данного кунг-фу мастера по сайтам. Процветания в личном деле.",
+    textEn: "For those looking for a young talent and a cool specialist in website development, I guarantee very fast work, quality, individual approach to site design, overall I'm very satisfied and will recommend this kung-fu master of websites to everyone. Prosperity in your personal endeavor.",
     role: "Владелец барбершопа «Классика»",
     roleEn: "Owner of Barbershop «Klassika»",
   },
