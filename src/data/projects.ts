@@ -5,19 +5,13 @@ export interface Project {
   tags: string[]
   url?: string
   github?: string
-  image?: string
+  image: string
+  quote: string
+  quoteEn: string
+  theme: "light" | "dark"
 }
 
 export const projects: Project[] = [
-  {
-    title: "EwEE-Visitca",
-    description:
-      "Сайт-визитка с анимированным терминалом, видео-фоном, магнитными кнопками и счётчиком звёзд. Чёрно-белый промышленный стиль DS-Motier.",
-    descriptionEn:
-      "Business card site with animated terminal, video background, magnetic buttons, and star counter. Black & white industrial DS-Motier style.",
-    tags: ["React", "TypeScript", "Tailwind", "Framer Motion"],
-    github: "https://github.com/EwEE-ECO/EwEE-Visitca",
-  },
   {
     title: "Барбершоп «Классика»",
     description:
@@ -25,13 +19,36 @@ export const projects: Project[] = [
     descriptionEn:
       "Landing page for a barbershop with service catalog, price list, and booking form. Responsive design, SEO optimized.",
     tags: ["HTML", "CSS", "JavaScript", "Adaptive"],
+    image: "screenshots/classica.jpg",
+    quote: "Минимализм как Классика",
+    quoteEn: "Minimalism like Klassika",
+    theme: "light",
   },
   {
-    title: "Проект 3",
+    title: "DS-Motier",
     description:
-      "Описание третьего проекта. Добавь изображение, ссылку и описание.",
+      "Open-source Discord бот на Python для сборки серверов из DSL-шаблонов. Гибкая система конфигурации, модульная архитектура.",
     descriptionEn:
-      "Third project description. Add an image, link, and description.",
-    tags: ["React", "API"],
+      "Open-source Discord bot in Python for building servers from DSL templates. Flexible config, modular architecture.",
+    tags: ["Python", "Discord API", "DSL", "SQLite", "YAML"],
+    github: "https://github.com/EwEE-ECO/DS-Motier",
+    image: "screenshots/ds-motier.jpg",
+    quote: "Дерзко как DS-Motier",
+    quoteEn: "Bold like DS-Motier",
+    theme: "dark",
+  },
+  {
+    title: "Stoming Clinic",
+    description:
+      "Сайт стоматологической клиники с каталогом услуг, врачами и онлайн-записью. Современный стек, акцент на скорость и UX.",
+    descriptionEn:
+      "Dental clinic website with service catalog, doctor profiles, and online booking. Modern stack, speed & UX focused.",
+    tags: ["React", "TypeScript", "Tailwind", "Next.js"],
+    url: "https://stoming-clinic.vercel.app",
+    github: "https://github.com/EwEE-ECO",
+    image: "screenshots/stoming.jpg",
+    quote: "Технологично как Stoming",
+    quoteEn: "Tech-forward like Stoming",
+    theme: "light",
   },
 ]
