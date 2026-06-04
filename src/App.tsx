@@ -3,6 +3,7 @@ import type { Lang } from "./data/translations"
 import { Hero } from "./components/Hero"
 import { Projects } from "./components/Projects"
 import { Reviews } from "./components/Reviews"
+import { Services } from "./components/Services"
 import { Skills } from "./components/Skills"
 import { Contact } from "./components/Contact"
 import { ScrollToTop } from "./components/ScrollToTop"
@@ -28,6 +29,7 @@ function Content() {
       <Hero />
       <Projects />
       <Reviews />
+      <Services />
       <Skills />
       <Contact />
       <ScrollToTop />
