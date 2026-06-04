@@ -3,37 +3,35 @@ export interface Project {
   description: string
   descriptionEn: string
   tags: string[]
-  github: string
-  featured?: boolean
+  url?: string
+  github?: string
+  image?: string
 }
 
 export const projects: Project[] = [
   {
-    title: "DS-Motier",
+    title: "EwEE-Visitca",
     description:
-      "Open-source Discord бот на Python для сборки серверов из DSL-шаблонов. Гибкая система конфигурации, модульная архитектура, автоматическая установка ролей, каналов и прав через декларативные спецификации.",
+      "Сайт-визитка с анимированным терминалом, видео-фоном, магнитными кнопками и счётчиком звёзд. Чёрно-белый промышленный стиль DS-Motier.",
     descriptionEn:
-      "Open-source Discord bot in Python for building servers from DSL templates. Flexible configuration, modular architecture, automatic role/channel/permission setup via declarative specs.",
-    tags: ["Python", "Discord API", "DSL", "SQLite", "YAML"],
-    github: "https://github.com/EwEE-ECO/DS-Motier",
-    featured: true,
+      "Business card site with animated terminal, video background, magnetic buttons, and star counter. Black & white industrial DS-Motier style.",
+    tags: ["React", "TypeScript", "Tailwind", "Framer Motion"],
+    github: "https://github.com/EwEE-ECO/EwEE-Visitca",
   },
   {
-    title: "AutoFishBot",
+    title: "Барбершоп «Классика»",
     description:
-      "Инструмент автоматизации для MajesticRP. Fullstack Master — от обработки изображений до бэкенд-логики. Оптимизация пайплайнов и интеграция с игровым API.",
+      "Лендинг для барбершопа с каталогом услуг, прайсом и формой записи. Адаптивный дизайн, оптимизация под SEO.",
     descriptionEn:
-      "Automation tool for MajesticRP. Fullstack Master — from image processing to backend logic. Pipeline optimization and game API integration.",
-    tags: ["Python", "OpenCV", "Automation", "API"],
-    github: "https://github.com/EwEE-ECO",
+      "Landing page for a barbershop with service catalog, price list, and booking form. Responsive design, SEO optimized.",
+    tags: ["HTML", "CSS", "JavaScript", "Adaptive"],
   },
   {
-    title: "KITT_2",
+    title: "Проект 3",
     description:
-      "Многофункциональный инструмент для автоматизации рутинных задач. Гибкая система плагинов, CLI-интерфейс, кроссплатформенность.",
+      "Описание третьего проекта. Добавь изображение, ссылку и описание.",
     descriptionEn:
-      "Multi-purpose tool for automating routine tasks. Flexible plugin system, CLI interface, cross-platform.",
-    tags: ["Python", "CLI", "Automation", "Plugins"],
-    github: "https://github.com/EwEE-ECO",
+      "Third project description. Add an image, link, and description.",
+    tags: ["React", "API"],
   },
 ]
