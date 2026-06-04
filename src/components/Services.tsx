@@ -1,5 +1,6 @@
 import { ScrollReveal } from "./ScrollReveal"
 import { useLanguage, t } from "../hooks/useLanguage"
+import { IconLayout2, IconLayersDifference, IconWindow, IconBrandDiscord, IconBrandTelegram, IconSearch, IconCode } from "@tabler/icons-react"
 
 interface Service {
   icon: string
@@ -17,7 +18,7 @@ const services: Service[] = [
     titleEn: "Landing Page",
     desc: "Одностраничный сайт под ключ. Анимации, адаптив, SEO.",
     descEn: "Single-page site. Animations, responsive, SEO.",
-    price: "от 5 000 ₽",
+    price: "от 10 000 ₽",
   },
   {
     icon: "layers",
@@ -65,68 +66,19 @@ const services: Service[] = [
     titleEn: "Integrations",
     desc: "Подключение API, платёжных систем, CI/CD, настройка деплоя.",
     descEn: "API integration, payment gateways, CI/CD, deploy setup.",
-    price: "от 5 000 ₽",
+    price: "от 10 000 ₽",
   },
 ]
 
 function ServiceIcon({ icon }: { icon: string }) {
   switch (icon) {
-    case "layout":
-      return (
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="3" y="3" width="18" height="18" rx="2" />
-          <line x1="3" y1="9" x2="21" y2="9" />
-          <line x1="9" y1="21" x2="9" y2="9" />
-        </svg>
-      )
-    case "layers":
-      return (
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <polygon points="12 2 2 7 12 12 22 7 12 2" />
-          <polyline points="2 17 12 22 22 17" />
-          <polyline points="2 12 12 17 22 12" />
-        </svg>
-      )
-    case "app":
-      return (
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="2" y="3" width="20" height="14" rx="2" />
-          <line x1="8" y1="21" x2="16" y2="21" />
-          <line x1="12" y1="17" x2="12" y2="21" />
-        </svg>
-      )
-    case "discord":
-      return (
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M9 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-          <path d="M15 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-          <path d="M8.5 3c-1.5 0-3 .5-4.5 2-2 5-2 12-2 12s2 2 5 3l1-2" />
-          <path d="M15.5 3c1.5 0 3 .5 4.5 2 2 5 2 12 2 12s-2 2-5 3l-1-2" />
-          <path d="M10 18l1 2h2l1-2" />
-        </svg>
-      )
-    case "telegram":
-      return (
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="22 2 11 13" />
-          <polygon points="22 2 15 22 11 13 2 9 22 2" />
-        </svg>
-      )
-    case "search":
-      return (
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="11" cy="11" r="8" />
-          <line x1="21" y1="21" x2="16.65" y2="16.65" />
-          <line x1="8" y1="11" x2="14" y2="11" />
-        </svg>
-      )
-    case "code":
-      return (
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="16 18 22 12 16 6" />
-          <polyline points="8 6 2 12 8 18" />
-        </svg>
-      )
+    case "layout": return <IconLayout2 size={20} />
+    case "layers": return <IconLayersDifference size={20} />
+    case "app": return <IconWindow size={20} />
+    case "discord": return <IconBrandDiscord size={20} />
+    case "telegram": return <IconBrandTelegram size={20} />
+    case "search": return <IconSearch size={20} />
+    case "code": return <IconCode size={20} />
   }
 }
 
