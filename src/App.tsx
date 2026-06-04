@@ -2,6 +2,7 @@ import { LanguageProvider, useLanguage } from "./hooks/useLanguage"
 import type { Lang } from "./data/translations"
 import { Hero } from "./components/Hero"
 import { Projects } from "./components/Projects"
+import { Reviews } from "./components/Reviews"
 import { Skills } from "./components/Skills"
 import { Contact } from "./components/Contact"
 import { ScrollToTop } from "./components/ScrollToTop"
@@ -26,6 +27,7 @@ function Content() {
       <LangToggle />
       <Hero />
       <Projects />
+      <Reviews />
       <Skills />
       <Contact />
       <ScrollToTop />
