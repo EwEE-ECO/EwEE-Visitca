@@ -41,7 +41,7 @@ const services: Service[] = [
     titleEn: "Discord Bot",
     desc: "Модерация, команды, интеграции с API, роли, логи.",
     descEn: "Moderation, commands, API integrations, roles, logs.",
-    price: "от 7 000 ₽",
+    price: "от 5 000 ₽",
   },
   {
     icon: "telegram",
