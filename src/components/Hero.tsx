@@ -35,6 +35,7 @@ export function Hero() {
           className="absolute inset-0 w-full h-full object-cover"
           style={{
             filter: "grayscale(1) brightness(0.25) contrast(1.4)",
+            objectPosition: "65% center",
           }}
         >
           <source src={asset("bg.mp4")} type="video/mp4" />
