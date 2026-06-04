@@ -17,7 +17,7 @@ const services: Service[] = [
     titleEn: "Landing Page",
     desc: "Одностраничный сайт под ключ. Анимации, адаптив, SEO.",
     descEn: "Single-page site. Animations, responsive, SEO.",
-    price: "от 10 000 ₽",
+    price: "от 5 000 ₽",
   },
   {
     icon: "layers",
