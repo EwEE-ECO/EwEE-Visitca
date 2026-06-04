@@ -25,7 +25,7 @@ const services: Service[] = [
     titleEn: "Multi-page Site",
     desc: "Корпоративные сайты, каталоги, портфолио. До 10 страниц.",
     descEn: "Corporate sites, catalogs, portfolios. Up to 10 pages.",
-    price: "от 20 000 ₽",
+    price: "от 17 000 ₽",
   },
   {
     icon: "app",
@@ -33,7 +33,7 @@ const services: Service[] = [
     titleEn: "Web App",
     desc: "Админки, дашборды, CRM. Сложная логика, авторизация, API.",
     descEn: "Dashboards, admin panels, CRM. Auth, API, complex logic.",
-    price: "до 30 000 ₽",
+    price: "от 25 000 ₽",
   },
   {
     icon: "discord",
