@@ -39,7 +39,6 @@ export function Hero() {
         >
           <source src={asset("bg.mp4")} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80" />
       </div>
 
       <div className="relative z-10 w-full px-6 md:px-16 lg:px-24 py-24">
