@@ -1,5 +1,6 @@
 import { ScrollReveal } from "./ScrollReveal"
 import { useLanguage, t } from "../hooks/useLanguage"
+import { asset } from "../lib/path"
 
 interface Skill {
   label: string
@@ -45,7 +46,7 @@ export function Skills() {
             <div className="flex flex-col items-center text-center gap-3">
               <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
                 <img
-                  src={`/icons/${skill.icon}.svg`}
+                  src={asset(`icons/${skill.icon}.svg`)}
                   alt={skill.label}
                   className="w-8 h-8 md:w-9 md:h-9 opacity-50 group-hover:opacity-100 transition-opacity duration-300"
                 />

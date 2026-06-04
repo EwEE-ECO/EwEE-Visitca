@@ -1,6 +1,7 @@
 import { GitFork, Heart } from "lucide-react"
 import { ScrollReveal } from "./ScrollReveal"
 import { useLanguage, t } from "../hooks/useLanguage"
+import { asset } from "../lib/path"
 
 const links = [
   {
@@ -63,7 +64,7 @@ export function Contact() {
             >
               {link.icon === "discord" ? (
                 <img
-                  src="/icons/discord.svg"
+                  src={asset("icons/discord.svg")}
                   alt="Discord"
                   className="w-[18px] h-[18px] opacity-40 group-hover:opacity-100 transition-opacity duration-300 shrink-0"
                 />

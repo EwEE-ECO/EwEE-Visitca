@@ -5,6 +5,7 @@ import { useGithubStars } from "../hooks/useGithubStars"
 import { useCountUp } from "../hooks/useCountUp"
 import { Typewriter } from "./Typewriter"
 import { Magnetic } from "./Magnetic"
+import { asset } from "../lib/path"
 
 const terminalLines = [
   { text: "[00:00:00] Fullstack developer", className: "text-text-secondary" },
@@ -30,13 +31,13 @@ export function Hero() {
           muted
           loop
           playsInline
-          poster="/bg.jpeg"
+          poster={asset("bg.jpeg")}
           className="absolute inset-0 w-full h-full object-cover"
           style={{
             filter: "grayscale(1) brightness(0.25) contrast(1.4)",
           }}
         >
-          <source src="/bg.mp4" type="video/mp4" />
+          <source src={asset("bg.mp4")} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80" />
       </div>
