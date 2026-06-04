@@ -4,7 +4,6 @@ import { useLanguage, t } from "../hooks/useLanguage"
 interface Review {
   text: string
   textEn: string
-  author: string
   role: string
   roleEn: string
 }
@@ -13,21 +12,18 @@ const reviews: Review[] = [
   {
     text: "Для тех кто ищет молодое дарование и крутого специалиста в разработке сайта, я вам гарантирую очень быструю работу, качество, индивидуальный подход к дизайну сайта, вообщем я очень доволен работой и всем буду рекомендовать данного кунг-фу мастера по сайтам. Процветания в личном деле \uD83E\uDEC2",
     textEn: "For those looking for a young talent and a cool specialist in website development, I guarantee very fast work, quality, individual approach to site design, overall I'm very satisfied and will recommend this kung-fu master of websites to everyone. Prosperity in your personal endeavor \uD83E\uDEC2",
-    author: "Алексей М.",
     role: "Владелец барбершопа «Классика»",
     roleEn: "Owner of Barbershop «Klassika»",
   },
   {
     text: "Заказал Discord бота для своего игрового сервера. Сделано за 3 дня, всё работает как часы. Отдельное спасибо за документацию — даже я разобрался как настраивать. Буду обращаться ещё.",
     textEn: "Ordered a Discord bot for my gaming server. Done in 3 days, everything works like clockwork. Special thanks for the documentation — even I figured out how to configure it. Will come back for more.",
-    author: "Дмитрий К.",
     role: "Владелец игрового сообщества",
     roleEn: "Gaming community owner",
   },
   {
     text: "Автоматизировали рутинные процессы в отделе — сэкономили часы работы каждую неделю. Инструмент гибкий, подстроили под наши нужды без проблем. Рекомендую как толкового автоматизатора.",
     textEn: "Automated routine processes in our department — saved hours of work every week. The tool is flexible, adapted to our needs without issues. Recommend as a savvy automation specialist.",
-    author: "Екатерина С.",
     role: "Руководитель IT-отдела",
     roleEn: "Head of IT department",
   },
@@ -83,8 +79,7 @@ export function Reviews() {
               </p>
 
               <div className="pt-4 border-t border-border">
-                <p className="text-sm font-medium text-accent">{review.author}</p>
-                <p className="text-xs text-text-muted mt-0.5">
+                <p className="text-xs text-text-muted">
                   {lang === "en" ? review.roleEn : review.role}
                 </p>
               </div>
