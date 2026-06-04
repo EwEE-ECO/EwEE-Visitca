@@ -44,8 +44,6 @@ export const projects: Project[] = [
     descriptionEn:
       "Dental clinic website with service catalog, doctor profiles, and online booking. Modern stack, speed & UX focused.",
     tags: ["React", "TypeScript", "Tailwind", "Next.js"],
-    url: "https://stoming-clinic.vercel.app",
-    github: "https://github.com/EwEE-ECO",
     image: "screenshots/stoming.jpg",
     quote: "Технологично как Stoming",
     quoteEn: "Tech-forward like Stoming",
